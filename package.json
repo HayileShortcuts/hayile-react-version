@@ -4,7 +4,9 @@
   "description": "This repository will recreate Hayile but chaging the front framework to react",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack serve --mode development --open --hot",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^9.1.2",
     "html-webpack-plugin": "^5.5.0",
