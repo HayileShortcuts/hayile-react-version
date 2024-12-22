@@ -1,0 +1,223 @@
+{
+  "name": "figma",
+  "program": [
+    {
+      "operativeSystem": "mac",
+      "environment": "figma",
+      "shortcuts": [
+        {
+          "title": "Essentials",
+          "values": [
+            { "description": "Show / Hide UI", "command": "⌘ \\" },
+            { "description": "Pick color", "command": "⌃ C" },
+            {
+              "description": "Quick actions",
+              "command": "⌘ /",
+              "additionalCommand": "⌘ P"
+            }
+          ]
+        },
+        {
+          "title": "Tools",
+          "values": [
+            { "description": "Move tool", "command": "V" },
+            { "description": "Frame tool", "command": "F" },
+            { "description": "Pen tool", "command": "P" },
+            { "description": "Pencil tool", "command": "⇧ P" },
+            { "description": "Text tool", "command": "T" },
+            { "description": "Rectangle tool", "command": "R" },
+            { "description": "Ellipse tool", "command": "O" },
+            { "description": "Line tool", "command": "L" },
+            { "description": "Arrow tool", "command": "⇧ L" },
+            { "description": "Add comment", "command": "C" },
+            { "description": "Pick color", "command": "⌃ C" },
+            { "description": "Slice tool", "command": "S" }
+          ]
+        },
+        {
+          "title": "View",
+          "values": [
+            { "description": "Show / Hide UI", "command": "⌘ \\" },
+            { "description": "Multiplayer cursors", "command": "⌥ ⌘ \\" },
+            { "description": "Rulers", "command": "⇧ R" },
+            { "description": "Outlines", "command": "⇧ O" },
+            {
+              "description": "Pixel preview",
+              "command": "⌃ P",
+              "additionalCommand": "⌘ ⇧ P"
+            },
+            {
+              "description": "Layout grids",
+              "command": "⌃ G",
+              "additionalCommand": "⇧ G"
+            },
+            {
+              "description": "Pixel grid",
+              "command": "⌘ `",
+              "additionalCommand": "⇧ `"
+            },
+            { "description": "Open layers panel", "command": "⌥ 1" },
+            { "description": "Open assets panel", "command": "⌥ 2" },
+            { "description": "Open design panel", "command": "⌥ 8" },
+            { "description": "Open prototype panel", "command": "⌥ 9" },
+            { "description": "Open inspect panel", "command": "⌥ 0" }
+          ]
+        },
+        {
+          "title": "Zoom",
+          "values": [
+            { "description": "Pan", "command": "Space drag" },
+            { "description": "Zoom in", "command": "+" },
+            { "description": "Zoom out", "command": "-" },
+            { "description": "Zoom to 100%", "command": "⇧ 0" },
+            { "description": "Zoom to fit", "command": "⇧ 1" },
+            { "description": "Zoom to selection", "command": "⇧ 2" },
+            { "description": "Zoom to previous frame", "command": "⇧ N" },
+            { "description": "Zoom to next frame", "command": "N" },
+            { "description": "Previous page", "command": "PgUp" },
+            { "description": "Next page", "command": "PgDn" },
+            { "description": "Find previous frame", "command": "Home" },
+            { "description": "Find next frame", "command": "End" }
+          ]
+        },
+        {
+          "title": "Text",
+          "values": [
+            { "description": "Bold", "command": "⌘ B" },
+            { "description": "Italic", "command": "⌘ I" },
+            { "description": "Underline", "command": "⌘ U" },
+            { "description": "Create link", "command": "⌘ K" },
+            { "description": "Strikethrough", "command": "⇧ ⌘ X" },
+            { "description": "Turn into a list", "command": "⇧ ⌘ 7" },
+            { "description": "Text align left", "command": "⌥ ⌘ L" },
+            { "description": "Text align center", "command": "⌥ ⌘ T" },
+            { "description": "Text align right", "command": "⌥ ⌘ R" },
+            { "description": "Text align justified", "command": "⌥ ⌘ J" },
+            {
+              "description": "Adjust font size",
+              "command": "⇧ ⌘ < ⇧ ⌘ >"
+            },
+            {
+              "description": "Adjust font weight",
+              "command": "⌥ ⌘ < ⌥ ⌘ >"
+            },
+            {
+              "description": "Adjust letter spacing",
+              "command": "⌥ < ⌥ >"
+            },
+            {
+              "description": "Adjust line height",
+              "command": "⇧ ⌥ < ⇧ ⌥ >"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "operativeSystem": "windows",
+      "environment": "figma",
+      "shortcuts": [
+        {
+          "title": "Essentials",
+          "values": [
+            { "description": "Show / Hide UI", "command": "⌃ \\" },
+            { "description": "Pick color", "command": "⌃ C" },
+            {
+              "description": "Quick actions",
+              "command": "⌃ /",
+              "additionalCommand": "⌃ P"
+            }
+          ]
+        },
+        {
+          "title": "Tools",
+          "values": [
+            { "description": "Move tool", "command": "V" },
+            { "description": "Frame tool", "command": "F" },
+            { "description": "Pen tool", "command": "P" },
+            { "description": "Pencil tool", "command": "⇧ P" },
+            { "description": "Text tool", "command": "T" },
+            { "description": "Rectangle tool", "command": "R" },
+            { "description": "Ellipse tool", "command": "O" },
+            { "description": "Line tool", "command": "L" },
+            { "description": "Arrow tool", "command": "⇧ L" },
+            { "description": "Add comment", "command": "C" },
+            { "description": "Pick color", "command": "I" },
+            { "description": "Slice tool", "command": "S" }
+          ]
+        },
+        {
+          "title": "View",
+          "values": [
+            { "description": "Show / Hide UI", "command": "⌃ \\" },
+            {
+              "description": "Multiplayer cursors",
+              "command": "Alt ⌃ \\"
+            },
+            { "description": "Rulers", "command": "⇧ R" },
+            { "description": "Outlines", "command": "⌃ O" },
+            { "description": "Pixel preview", "command": "⌃ ⇧ P" },
+            { "description": "Layout grids", "command": "⇧ G" },
+            { "description": "Pixel grid", "command": "⇧ `" },
+            { "description": "Open layers panel", "command": "Alt 1" },
+            { "description": "Open assets panel", "command": "Alt 2" },
+            { "description": "Open design panel", "command": "Alt 8" },
+            { "description": "Open prototype panel", "command": "Alt 9" },
+            { "description": "Open inspect panel", "command": "Alt 0" }
+          ]
+        },
+        {
+          "title": "Zoom",
+          "values": [
+            { "description": "Pan", "command": "Space drag" },
+            { "description": "Zoom in", "command": "+" },
+            { "description": "Zoom out", "command": "-" },
+            { "description": "Zoom to 100%", "command": "⇧ 0" },
+            { "description": "Zoom to fit", "command": "⇧ 1" },
+            { "description": "Zoom to selection", "command": "⇧ 2" },
+            { "description": "Zoom to previous frame", "command": "⇧ N" },
+            { "description": "Zoom to next frame", "command": "N" },
+            { "description": "Previous page", "command": "PgUp" },
+            { "description": "Next page", "command": "PgDn" },
+            { "description": "Find previous frame", "command": "Home" },
+            { "description": "Find next frame", "command": "End" }
+          ]
+        },
+        {
+          "title": "Text",
+          "values": [
+            { "description": "Bold", "command": "⌃ B" },
+            { "description": "Italic", "command": "⌃ I" },
+            { "description": "Underline", "command": "⌃ U" },
+            { "description": "Create link", "command": "⌃ K" },
+            { "description": "Strikethrough", "command": "⇧ ⌃ X" },
+            { "description": "Turn into a list", "command": "⇧ ⌃ 7" },
+            { "description": "Text align left", "command": "Alt ⌃ L" },
+            { "description": "Text align center", "command": "Alt ⌃ T" },
+            { "description": "Text align right", "command": "Alt ⌃ R" },
+            {
+              "description": "Text align justified",
+              "command": "Alt ⌃ J"
+            },
+            {
+              "description": "Adjust font size",
+              "command": "⇧ ⌃ < ⇧ ⌃ >"
+            },
+            {
+              "description": "Adjust font weight",
+              "command": "Alt ⌃ < Alt ⌃ >"
+            },
+            {
+              "description": "Adjust letter spacing",
+              "command": "Alt < Alt >"
+            },
+            {
+              "description": "Adjust line height",
+              "command": "⇧ Alt < ⇧ Alt >"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

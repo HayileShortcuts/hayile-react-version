@@ -1,0 +1,142 @@
+---
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hayile</title>
+    <base href="/" />
+
+    <!-- Primary Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="title" content="Hayile Shortcuts " />
+    <meta name="description" content={t("meta.description")} />
+    <meta
+      name="”keywords”"
+      content="shortcuts, atajos, visual studio code, vsc, figma, git comandos"
+    />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Hayile" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://hayile.netlify.app/" />
+    <meta property="og:title" content="Hayile Shortcuts " />
+    <meta property="og:description" content={t("meta.description")} />
+    <meta
+      property="og:image"
+      content="https://hayile.netlify.app/assets/img/hayile.png"
+    />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://hayile.netlify.app/" />
+    <meta property="twitter:title" content="Hayile Shortcuts " />
+    <meta property="twitter:description" content={t("meta.description")} />
+    <meta
+      property="twitter:image"
+      content="https://hayile.netlify.app/assets/img/hayile.png"
+    />
+    <meta name="theme-color" content="#317EFB" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Astro Basics</title>
+  </head>
+</html>
+
+<body>
+  <slot />
+</body>
+
+<style>
+  @import "https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap";
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  @font-face {
+    font-family: Rubik;
+    font-weight: 700;
+  }
+  @keyframes grow {
+    0% {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+  * {
+    margin: 0;
+    padding: 2rem;
+    box-sizing: border-box;
+  }
+  html,
+  body {
+    font-family: Rubik;
+    font-size: 1rem;
+    color: var(--terciary-color);
+    background: var(--bg-color);
+  }
+
+  @media (prefers-color-scheme: light) {
+    :root {
+      --mobile-padding: 1.2rem;
+      --mobile-font-size: 1rem;
+      --bg-color-light: #f2f2f200;
+      --bg-topbar-light: #7f3fa6;
+      --main-color-light: #f2f2f238;
+      --secondary-color-light: #887f8e65;
+      --terciary-color-light: #0b2034;
+      --quaternary-color-light: #7f3fa6ee;
+      --bg-color-dark: #0b2034;
+      --bg-topbar-dark: #0b2034;
+      --main-color-dark: #0b2034;
+      --secondary-color-dark: #887f8e65;
+      --terciary-color-dark: #f6f6f9;
+      --quaternary-color-dark: #7f3fa6;
+
+      --bg-color: var(--bg-color-light);
+      --bg-topbar: var(--bg-topbar-light);
+      --main-color: var(--main-color-light);
+      --secondary-color: var(--secondary-color-light);
+      --terciary-color: var(--terciary-color-light);
+      --quaternary-color: var(--quaternary-color-light);
+      --logo-color: var(--terciary-color-light);
+    }
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --mobile-padding: 1.2rem;
+      --mobile-font-size: 1rem;
+      --bg-color-light: #f2f2f200;
+      --bg-topbar-light: #7f3fa6;
+      --main-color-light: #f2f2f238;
+      --secondary-color-light: #887f8e65;
+      --terciary-color-light: #0b2034;
+      --quaternary-color-light: #7f3fa6ee;
+      --bg-color-dark: #0b2034;
+      --bg-topbar-dark: #0b2034;
+      --main-color-dark: #0b2034;
+      --secondary-color-dark: #887f8e65;
+      --terciary-color-dark: #f6f6f9;
+      --quaternary-color-dark: #7f3fa6;
+
+      --bg-color: var(--bg-color-dark);
+      --bg-topbar: var(--bg-topbar-dark);
+      --main-color: var(--main-color-dark);
+      --secondary-color: var(--secondary-color-dark);
+      --terciary-color: var(--terciary-color-dark);
+      --quaternary-color: var(--quaternary-color-dark);
+      --logo-color: var(--terciary-color-dark);
+    }
+  }
+</style>

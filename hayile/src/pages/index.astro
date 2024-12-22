@@ -1,0 +1,170 @@
+---
+import { getCollection } from "astro:content";
+import Layout from "../layouts/Layout.astro";
+import {
+  FigmaIcon,
+  GitIcon,
+  LinuxIcon,
+  Logo,
+  MacIcon,
+  VsIcon,
+  WindowsIcon,
+} from "@/components/icons";
+import { Section } from "@/components/Section";
+import { Button, TypeOfButton } from "@/components/Button";
+import { getLangFromUrl, useTranslations } from "@/i18n/utils";
+import { Searchbar } from "@/components/Searchbar";
+import { SelectedTitle } from "@/components/SelectedTitle";
+
+const all = await getCollection("shortcuts");
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+export const prerender = false;
+---
+
+<Layout>
+  <header class="flex flex-row gap-6">
+    <Logo />
+    <h1 class="text-3xl font-medium">
+      {"<"}Hayile{"/>"}
+    </h1>
+  </header>
+  <div class="content">
+    <div class="sidebar">
+      <h2>{t("title.select")}</h2>
+      <div class="sidebar-buttons">
+        <Button
+          value="vscode"
+          icon={VsIcon()}
+          environment={TypeOfButton.PROGRAM}
+          client:load
+        />
+        <Button
+          value="git"
+          icon={GitIcon()}
+          environment={TypeOfButton.PROGRAM}
+          client:load
+        />
+        <Button
+          value="figma"
+          icon={FigmaIcon()}
+          environment={TypeOfButton.PROGRAM}
+          client:load
+        />
+      </div>
+      <a class="mt-7" href="https://github.com/HayileShortcuts/hayile-json">
+        + {t("link.add")}</a
+      >
+    </div>
+    <div class="main-info">
+      <div id="shortcut-list-visualizer">
+        <div class="list-header">
+          <div class="button-group">
+            <Button
+              value="windows"
+              icon={WindowsIcon()}
+              environment={TypeOfButton.ENVIRONMENT}
+              client:load
+            />
+            <Button
+              value="mac"
+              icon={MacIcon()}
+              environment={TypeOfButton.ENVIRONMENT}
+              client:load
+            />
+            <Button
+              value="linux"
+              icon={LinuxIcon()}
+              environment={TypeOfButton.ENVIRONMENT}
+              client:load
+            />
+          </div>
+
+          <SelectedTitle client:load />
+        </div>
+      </div>
+      <Searchbar lang={lang} client:load />
+      <Section sections={all} lang={lang} client:load />
+    </div>
+  </div>
+</Layout>
+
+<style>
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 74%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "sidebar main-info";
+  }
+  .sidebar {
+    grid-area: 1/1/3/2;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2.7rem 0;
+  }
+  .sidebar-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.4rem;
+    padding: 1rem 0;
+  }
+  .button-group {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1.4rem;
+  }
+  .shortcut-container {
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    height: 60vh;
+  }
+  span {
+    display: flex;
+    flex-direction: row;
+  }
+  form {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+    height: fit-content;
+    border-radius: 4px;
+    padding: 1rem;
+    box-shadow: -1px 2px 4px #0000001f;
+    border-color: transparent;
+    padding: 0 2rem;
+    outline: none;
+  }
+  #shortcut-list-visualizer {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .list-header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    gap: 1%;
+    padding: 1.4rem 0;
+    align-items: baseline;
+  }
+
+  .shortcut-item {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 0.4rem;
+  }
+  .shortcuts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 1.4rem;
+  }
+</style>

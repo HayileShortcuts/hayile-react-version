@@ -1,0 +1,330 @@
+{
+  "name": "git",
+  "program": [
+    {
+      "operativeSystem": "mac",
+      "environment": "git",
+      "shortcuts": [
+        {
+          "title": "General",
+          "values": [
+            {
+              "description": "Display the Settings window",
+              "command": "⌘ ,"
+            },
+            {
+              "description": "Hide the git application",
+              "command": "⌘ H"
+            },
+            {
+              "description": "Hide all other applications",
+              "command": "Option ⌘ H"
+            },
+            {
+              "description": "Quit git",
+              "command": "⌘ Q"
+            },
+            {
+              "description": "Toggle full screen view",
+              "command": "Control ⌘ F"
+            },
+            {
+              "description": "Reset zoom to default text size",
+              "command": "⌘ 0"
+            },
+            {
+              "description": "Zoom in for larger text and graphics",
+              "command": "⌘ ="
+            },
+            {
+              "description": "Zoom out for smaller text and graphics",
+              "command": "⌘ -"
+            },
+            {
+              "description": "Decrease active pane width",
+              "command": "⌘ 8"
+            },
+            {
+              "description": "Increase active pane width",
+              "command": "⌘ 9"
+            },
+            {
+              "description": "Toggle Developer Tools",
+              "command": "Option ⌘ I"
+            },
+            {
+              "description": "Open context menu of selected component",
+              "command": "Shift F10"
+            }
+          ]
+        },
+        {
+          "title": "Repositories",
+          "values": [
+            {
+              "description": "Add a new repository",
+              "command": "⌘ N"
+            },
+            {
+              "description": "Add a local repository",
+              "command": "⌘ O"
+            },
+            {
+              "description": "Clone a repository from GitHub",
+              "command": "Shift ⌘ O"
+            },
+            {
+              "description": "Show a list of your repositories",
+              "command": "⌘ T"
+            },
+            {
+              "description": "Push the latest commits to GitHub",
+              "command": "⌘ P"
+            },
+            {
+              "description": "Pull down the latest changes from GitHub",
+              "command": "Shift ⌘ P"
+            },
+            {
+              "description": "Remove an existing repository",
+              "command": "⌘ Delete"
+            },
+            {
+              "description": "View the repository on GitHub",
+              "command": "Shift ⌘ G"
+            },
+            {
+              "description": "Open repository in your preferred terminal tool",
+              "command": "Control `"
+            },
+            {
+              "description": "Show the repository in Finder",
+              "command": "Shift ⌘ F"
+            },
+            {
+              "description": "Open the repository in your preferred editor tool",
+              "command": "Shift ⌘ A"
+            },
+            {
+              "description": "Create an issue on GitHub",
+              "command": "⌘ I"
+            }
+          ]
+        },
+        {
+          "title": "Branches",
+          "values": [
+            {
+              "description": "Show all your changes before committing",
+              "command": "⌘ 1"
+            },
+            {
+              "description": "Show your commit history",
+              "command": "⌘ 2"
+            },
+            {
+              "description": "Show all your branches",
+              "command": "⌘ B"
+            },
+            {
+              "description": "Go to the commit summary field",
+              "command": "⌘ G"
+            },
+            {
+              "description": "Commit changes when summary or description field is active",
+              "command": "⌘ Enter"
+            },
+            {
+              "description": "Select or deselect all highlighted files",
+              "command": "Space"
+            },
+            {
+              "description": "Create a new branch",
+              "command": "Shift ⌘ N"
+            },
+            {
+              "description": "Rename the current branch",
+              "command": "Shift ⌘ R"
+            },
+            {
+              "description": "Delete the current branch",
+              "command": "Shift ⌘ D"
+            },
+            {
+              "description": "Update from default branch",
+              "command": "Shift ⌘ U"
+            },
+            {
+              "description": "Compare to an existing branch",
+              "command": "Shift ⌘ B"
+            },
+            {
+              "description": "Merge into current branch",
+              "command": "Shift ⌘ M"
+            },
+            {
+              "description": "Stash current changes",
+              "command": "Shift ⌘ S"
+            },
+            {
+              "description": "Show or hide stashed changes",
+              "command": "Control H"
+            },
+            {
+              "description": "Compare branches on GitHub",
+              "command": "Shift ⌘ C"
+            },
+            {
+              "description": "Show the current pull request on GitHub",
+              "command": "⌘ R"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "operativeSystem": "windows",
+      "environment": "git",
+      "shortcuts": [
+        {
+          "title": "General",
+          "values": [
+            {
+              "description": "Display the Options window",
+              "command": "^ ,"
+            },
+            { "description": "Toggle full screen view", "command": "F11" },
+            {
+              "description": "Reset zoom to default text size",
+              "command": "^ 0"
+            },
+            {
+              "description": "Zoom in for larger text and graphics",
+              "command": "^ ="
+            },
+            {
+              "description": "Zoom out for smaller text and graphics",
+              "command": "^ -"
+            },
+            {
+              "description": "Decrease active pane width",
+              "command": "^ 8"
+            },
+            {
+              "description": "Increase active pane width",
+              "command": "^ 9"
+            },
+            {
+              "description": "Toggle Developer Tools",
+              "command": "^ Shift I"
+            }
+          ]
+        },
+        {
+          "title": "Repositories",
+          "values": [
+            { "description": "Add a new repository", "command": "^ N" },
+            { "description": "Add a local repository", "command": "^ O" },
+            {
+              "description": "Clone a repository from GitHub",
+              "command": "^ Shift O"
+            },
+            {
+              "description": "Show a list of your repositories",
+              "command": "^ T"
+            },
+            {
+              "description": "Push the latest commits to GitHub",
+              "command": "^ P"
+            },
+            {
+              "description": "Pull down the latest changes from GitHub",
+              "command": "^ Shift P"
+            },
+            {
+              "description": "Remove an existing repository",
+              "command": "^ Delete"
+            },
+            {
+              "description": "View the repository on GitHub",
+              "command": "^ Shift G"
+            },
+            {
+              "description": "Open repository in your preferred command line tool",
+              "command": "^ `"
+            },
+            {
+              "description": "Show the repository in Explorer",
+              "command": "^ Shift F"
+            },
+            {
+              "description": "Open the repository in your preferred editor tool",
+              "command": "^ Shift A"
+            },
+            { "description": "Create an issue on GitHub", "command": "^ I" }
+          ]
+        },
+        {
+          "title": "Branches",
+          "values": [
+            {
+              "description": "Show all your changes before committing",
+              "command": "^ 1"
+            },
+            { "description": "Show your commit history", "command": "^ 2" },
+            { "description": "Show all your branches", "command": "^ B" },
+            {
+              "description": "Go to the commit summary field",
+              "command": "^ G"
+            },
+            {
+              "description": "Commit changes when summary or description field is active",
+              "command": "^ Enter"
+            },
+            {
+              "description": "Select or deselect all highlighted files",
+              "command": "Space"
+            },
+            { "description": "Create a new branch", "command": "^ Shift N" },
+            {
+              "description": "Rename the current branch",
+              "command": "^ Shift R"
+            },
+            {
+              "description": "Delete the current branch",
+              "command": "^ Shift D"
+            },
+            {
+              "description": "Update from default branch",
+              "command": "^ Shift U"
+            },
+            {
+              "description": "Compare to an existing branch",
+              "command": "^ Shift B"
+            },
+            {
+              "description": "Merge into current branch",
+              "command": "^ Shift M"
+            },
+            {
+              "description": "Stash current changes",
+              "command": "^ Shift S"
+            },
+            {
+              "description": "Show or hide stashed changes",
+              "command": "^ H"
+            },
+            {
+              "description": "Compare branches on GitHub",
+              "command": "^ Shift C"
+            },
+            {
+              "description": "Show the current pull request on GitHub",
+              "command": "^ R"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
