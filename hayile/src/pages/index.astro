@@ -79,7 +79,6 @@ export const prerender = false;
               client:load
             />
           </div>
-
           <SelectedTitle client:load />
         </div>
       </div>
@@ -166,5 +165,33 @@ export const prerender = false;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     row-gap: 1.4rem;
+  }
+
+  @media (max-width: 768px) {
+    .content {
+      display: flex;
+      flex-direction: column;
+    }
+    .sidebar {
+      display: flex;
+      align-items: start;
+      padding: 2.7rem 0;
+    }
+    .sidebar-buttons {
+      display: flex;
+      flex-flow: row nowrap;
+      align-content: center;
+      justify-content: center;
+      align-items: center;
+      gap: 1.4rem;
+    }
+    .list-header {
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 1.4rem 0;
+      align-items: baseline;
+    }
   }
 </style>
